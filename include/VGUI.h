@@ -80,8 +80,7 @@
 #ifdef _WIN32
 # define VGUIAPI __declspec( dllexport )
 #else
-# define VGUIAPI  __attribute__ ((visibility("default")))
-#include <sys/types.h> // size_t define
+# define VGUIAPI
 #endif
 
 #define null 0L
@@ -94,7 +93,7 @@ typedef unsigned long  ulong;
 namespace vgui
 {
 
-VGUIAPI void  vgui_setMalloc(void *(*malloc)(size_t size) );
+VGUIAPI void  vgui_setMalloc(void* (*malloc)(size_t size));
 VGUIAPI void  vgui_setFree(void (*free)(void* memblock));
 VGUIAPI void  vgui_strcpy(char* dst,int dstLen,const char* src);
 VGUIAPI char* vgui_strdup(const char* src);

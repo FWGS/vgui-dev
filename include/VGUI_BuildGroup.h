@@ -10,8 +10,7 @@
 
 #include<VGUI.h>
 #include<VGUI_Dar.h>
-#include <VGUI_MouseCode.h>
-#include <VGUI_KeyCode.h>
+
 
 namespace vgui
 {

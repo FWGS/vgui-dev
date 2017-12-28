@@ -166,7 +166,6 @@ protected:
 	ELEMTYPE* _data;
 };
 
-#ifdef _WIN32
 //forward referencing all the template types used so they get exported
 template class VGUIAPI Dar<char>;
 template class VGUIAPI Dar<char*>;
@@ -186,7 +185,7 @@ template class VGUIAPI Dar<class ChangeSignal*>;
 template class VGUIAPI Dar<class Panel*>;
 template class VGUIAPI Dar<class Label*>;
 template class VGUIAPI Dar<class RepaintSignal*>;
-#endif
+
 
 }
 
